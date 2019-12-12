@@ -177,6 +177,7 @@ class CreateSipphonesTable extends Migration
     {
         Schema::connection('mysql')->dropIfExists('account_settings');
         Schema::connection('mysql')->dropIfExists('advance_settings');
+        Schema::connection('mysql')->dropIfExists('audio_settings');
         Schema::connection('mysql')->dropIfExists('device_settings');
         Schema::connection('mysql')->dropIfExists('device_admin');
         Schema::connection('mysql')->dropIfExists('feature_settings');
