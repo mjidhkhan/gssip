@@ -142,7 +142,7 @@ Our Database tables are given below.
 |-----------------------|---------------|-------|-------|--------------
 |1	id (Primary)		|int(11)		|No		|None	|AUTO_INCREMENT	
 |2	model_id			|int(11)		|No		|None	|		
-|3	model_macIndex		|varchar(50)	|No		|None	|	
+|3	model_mac (Index)	|varchar(50)	|No		|None	|	
 
 
 
@@ -161,7 +161,7 @@ Our Database tables are given below.
 |#	|Name				|Type			|Null	|Default| 	Extra
 |---|-------------------|---------------|-------|-------|---------------
 |1	|id (Primary)		|int(11)		|No		|None	|AUTO_INCREMENT	
-|2	|sip_ipIndex		|varchar(50)	|Yes	|NULL	|
+|2	|sip_ip (Index)		|varchar(50)	|Yes	|NULL	|
 |3	|server_type		|varchar(1)		|Yes	|NULL	|	
 
 
