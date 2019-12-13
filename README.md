@@ -188,54 +188,83 @@ We will create sipphones migration using following command
 $ php artisan make:migration create_sipphones_table
 ```
 we can create single migration file for all tables and we also can create different files for different tables in data base depends on preferences.
+
 #### Create Migration for account_settings
 ```shell
-$ php artisan make:migraton create_account_settings_table
+$ php artisan make:migration create_account_settings_table
+```
+
+```php 
+class CreateAccountSettingsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('account_settings', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('account_settings');
+    }
+}
 ```
 
 #### Create Migration for advance_settings
 ```shell
-$ php artisan make:migraton create_advance_settings_table
+$ php artisan make:migration create_advance_settings_table
 ```
 
 #### Create Migration for audio_settings
 ```shell
-$ php artisan make:migraton create_audio_settings_table
+$ php artisan make:migration create_audio_settings_table
 ```
 
 #### Create Migration for device_admin
 ```shell
-$ php artisan make:migraton create_device_admin_table
+$ php artisan make:migration create_device_admin_table
 ```
 
 #### Create Migration for feature_settings
 ```shell
-$ php artisan make:migraton create_feature_settings_table
+$ php artisan make:migration create_feature_settings_table
 ```
 
 #### Create Migration for mpk_details
 ```shell
-$ php artisan make:migraton create_mpk_details_table
+$ php artisan make:migration create_mpk_details_table
 ```
 
 #### Create Migration for phone_macs
 ```shell
-$ php artisan make:migraton create_phone_macs_table
+$ php artisan make:migration create_phone_macs_table
 ```
 
 #### Create Migration for phone_models
 ```shell
-$ php artisan make:migraton create_phone_models_table
+$ php artisan make:migration create_phone_models_table
 ```
 
 #### Create Migration for sip_server
 ```shell
-$ php artisan make:migraton create_sip_server_table
+$ php artisan make:migration create_sip_server_table
 ```
 
 #### Create Migration for web_services
 ```shell
-$ php artisan make:migraton create_web_services_table
+$ php artisan make:migration create_web_services_table
 ```
 
 
