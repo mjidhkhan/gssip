@@ -314,14 +314,17 @@ Follow the same procedure for other files.
 
 #### Adding single or multiple columns in existing table.
 
+Asume we want to add color class name in sipe_server table, so when we choose Default or Temporary sip IP
+we recognize the server by looking at background colour 
+
 Create new migration as follows:
 ```shell
-$ php artisan make:migration add_color_to_sip_server
+$ php artisan make:migration add_background_color_to_sip_server
 ```
 This command will create a migration class in ***[database/migrations]***  folder and will look like this.
 
 ```php
-class AddColorToSipServer extends Migration
+class AddBackgroundColorToSipServer extends Migration
 {
     /**
      * Run the migrations.
@@ -362,7 +365,7 @@ class AddColorToSipServer extends Migration
         Schema::create('sip_server', function (Blueprint $table) {
            
 		   //you can add multiple tables
-            $table->string('color');
+            $table->string('background-color', 150)->default('bg-teal-800')->after('server_type');
             
         });
     }
@@ -374,13 +377,33 @@ class AddColorToSipServer extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sip_server');
+       Schema::table('sip_server', function (Blueprint $table) {
+            $table->dropColumn('background-color');
+        });
     }
 }
 ```
 
 Finally, you need to run the following command to migrate that.
 
+
 ```shell
 php artisan migrate
+```
+
+### Remove or drop table column
+To drop column, use _**dropColumn**_ method on the schema builder. Before dropping columns from a _**SQLite database**_, you will need to add the _**doctrine/dbal**_ dependency to your _**composer.json**_ file and run the composer update command in your terminal to install the library:
+
+```shell 
+$ composer require doctrine/dbal
+```
+
+### Frontend/VueJS
+
+```shell
+$ composer require laravel/ui --dev # Installs the laravel/ui package
+```
+### Install the frontend scaffolding
+```shell
+php artisan ui vue --auth         # Install the frontend scaffolding
 ```
