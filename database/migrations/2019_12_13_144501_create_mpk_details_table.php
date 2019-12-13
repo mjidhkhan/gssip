@@ -15,6 +15,11 @@ class CreateMpkDetailsTable extends Migration
     {
         Schema::create('mpk_details', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('mac', 50);
+            $table->string('mode', 50);
+            $table->string('account', 50)->nullable();
+            $table->string('mpk_description', 150)->nullable();
+            $table->string('mpk_value', 50)->nullable();
             $table->timestamps();
         });
     }

@@ -14,7 +14,14 @@ class CreateAdvanceSettingsTable extends Migration
     public function up()
     {
         Schema::create('advance_settings', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('mac', 50)->primary();
+            $table->string('vlan_tag', 50)->nullable();
+            $table->string('priority_tag', 50)->nullable();
+            $table->string('pc_vlan_tag', 50)->nullable();
+            $table->string('pc_priority_tag', 50)->nullable();
+            $table->string('host_name', 50);
+            $table->integer('bg_label')->default(0);
+            $table->integer('long_label')->default(0);
             $table->timestamps();
         });
     }

@@ -14,7 +14,11 @@ class CreateAudioSettingsTable extends Migration
     public function up()
     {
         Schema::create('audio_settings', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('mac', 50)->primary();
+            $table->string('fcodec', 50);
+            $table->string('scodec', 50);
+            $table->string('tcodec', 50);
+            $table->integer('handsetgain')->default(0);
             $table->timestamps();
         });
     }

@@ -15,6 +15,8 @@ class CreatePhoneMacsTable extends Migration
     {
         Schema::create('phone_macs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('model_id');
+            $table->string('vlan_tag', 50);
             $table->timestamps();
         });
     }

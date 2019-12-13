@@ -15,6 +15,8 @@ class CreateSipServerTable extends Migration
     {
         Schema::create('sip_server', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('sip_ipIndex', 50)->nullable();
+            $table->string('server_type', 50)->nullable();
             $table->timestamps();
         });
     }

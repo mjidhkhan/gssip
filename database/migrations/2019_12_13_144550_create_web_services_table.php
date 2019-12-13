@@ -14,7 +14,11 @@ class CreateWebServicesTable extends Migration
     public function up()
     {
         Schema::create('web_services', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('mac', 50)->primary();
+            $table->string('weather_update', 50)->nullable();
+            $table->string('currency_exchange', 50)->nullable();
+            $table->string('frimware_upgrade', 200)->nullable();
+            $table->integer('connection_type');
             $table->timestamps();
         });
     }

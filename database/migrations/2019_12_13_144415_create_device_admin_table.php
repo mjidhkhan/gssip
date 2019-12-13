@@ -14,7 +14,8 @@ class CreateDeviceAdminTable extends Migration
     public function up()
     {
         Schema::create('device_admin', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('mac', 50)->primary();
+            $table->string('admin_pass', 200);
             $table->timestamps();
         });
     }
