@@ -194,34 +194,6 @@ we can create single migration file for all tables and we also can create differ
 $ php artisan make:migration create_account_settings_table
 ```
 
-```php 
-class CreateAccountSettingsTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('account_settings', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
-        });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('account_settings');
-    }
-}
-```
-
 #### Create Migration for advance_settings
 ```shell
 $ php artisan make:migration create_advance_settings_table
@@ -267,6 +239,78 @@ $ php artisan make:migration create_sip_server_table
 $ php artisan make:migration create_web_services_table
 ```
 
+Starting file will be look like this. We took create_account_settings_table migration file.
+```php 
+class CreateAccountSettingsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('account_settings', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('account_settings');
+    }
+}
+```
+
+Now we will modify create_account_settings_table migration file as follows.
+```php
+class CreateAccountSettingsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('account_settings', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->integer('model_id');
+            $table->string('mac', 50)->unique()->nullable();
+            $table->string('account_active', 1)->nullable();
+            $table->string('account_name', 150)->nullable();
+            $table->string('sip_server', 50);
+            $table->string('sip_user', 150)->nullable();
+            $table->string('auth_id', 150)->nullable();
+            $table->string('auth_password', 250)->nullable();
+            $table->string('acc_name', 150)->nullable();
+            $table->string('voicemail_id', 30)->nullable();
+            $table->string('cf_created', 1)->nullable();
+            $table->timestamp('date_created');
+            $table->string('flag', 1)->default(0);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('account_settings');
+    }
+}
+```
+
+Follow the same procedure for other files.
 
 #### Adding single or multiple columns in existing table.
 
