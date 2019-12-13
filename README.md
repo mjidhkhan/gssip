@@ -51,9 +51,9 @@ Our Database tables are given below.
 
 |#	|Name				|Type			|Null	|Default| 	Extra
 |---|-------------------|---------------|-------|-------|---------------
-| 1	|id	(Primary)		|int(11)		|No		|None	|AUTO_INCREMENT	
+| 1	|id					|int(11)		|No		|None	|Primary, AUTO_INCREMENT	
 | 2	|model_id			|int(11)		|No		|None	|		
-| 3	|macIndex			|varchar(50)	|Yes	|NULL	|		
+| 3	|mac				|varchar(50)	|Yes	|NULL	|	Index	
 | 4	|account_active		|varchar(1)		|Yes	|NULL	|		
 | 5	|account_name		|varchar(150)	|Yes	|NULL	|		
 | 6	|sip_server			|varchar(50)	|No		|None	|		
@@ -72,7 +72,7 @@ Our Database tables are given below.
 
 | #	|Name				|Type			|Null	|Default| 	Extra
 |---|-------------------|---------------|-------|-------|-------------
-| 1	|mac	(Primary)	|varchar(50)	|No		|None	|		
+| 1	|mac	  			|varchar(50)	|No		|None	|	Primary	
 | 2	|vlan_tag			|varchar(50)	|Yes	|NULL	|		
 | 3	|priority_tag		|varchar(50)	|Yes	|NULL	|		
 | 4	|pc_vlan_tag		|varchar(50)	|Yes	|NULL	|		
@@ -87,7 +87,7 @@ Our Database tables are given below.
 
 | #	|Name				|Type			|Null	|Default|	Extra
 |---|-------------------|---------------|-------|-------|-----------
-| 1	|mac	(Primary)	|varchar(50)	|No		|None	|		
+| 1	|mac				|varchar(50)	|No		|None	| Primary			
 | 2	|fcodec				|varchar(50)	|No		|None	|		
 | 3	|scodec				|varchar(50)	|No		|None	|		
 | 4	|tcodec				|varchar(50)	|No		|None	|		
@@ -99,7 +99,7 @@ Our Database tables are given below.
 
 |#	|Name				|Type			|Null	|Default |Extra
 |---|-------------------|---------------|-------|--------|---------
-|1	|mac (Primary)		|varchar(50)	|No		|None	 |		
+|1	|mac 				|varchar(50)	|No		|None	 | Primary		
 |2	|admin_pass			|varchar(200)	|No		|None	 |
 
 
@@ -108,7 +108,7 @@ Our Database tables are given below.
 
 |#	|Name					|Type			|Null	|Default| Extra
 |---|-----------------------|---------------|-------|-------|-------
-|1	|mac (Primary)			|varchar(50)	|No		|None	|		
+|1	|mac 					|varchar(50)	|No		|None	|Primary	
 |2	|a_transfer				|varchar(50)	|Yes	|NULL	|		
 |3	|enable_cf				|varchar(50)	|Yes	|NULL	|		
 |4	|fs_date				|varchar(10)	|Yes	|NULL	|		
@@ -119,20 +119,20 @@ Our Database tables are given below.
 |9	|VPK_transfer			|int(11)		|No		|0		|	
 |10	|cf_on					|varchar(3)		|Yes	|NULL	|		
 |11	|cf_off					|varchar(3)		|Yes	|NULL	|		
-|12	|incoming_call_popup	|	varchar(1)	|No		|0		|		
+|12	|incoming_call_popup	|varchar(1)		|No		|0		|		
 
 
 
 #### mpk_details
 
-|#	|Name				|Type			|Null	|Default| 	Extra
-|---|-------------------|---------------|-------|-------|--------------
-|1	|id (Primary)		|int(11)		|No		|None	|AUTO_INCREMENT	
-|2	|mac				|varchar(50)	|No		|None	|		
-|3	|mode				|varchar(50)	|No		|None	|		
-|4	|account			|varchar(50)	|Yes	|NULL	|		
-|5	|mpk_description	|varchar(150)	|Yes	|NULL	|	
-|6	|mpk_value			|varchar(50)	|Yes	|NULL	|		
+|#	|Name			|Type			|Null	|Default| 	Extra
+|---|---------------|---------------|-------|-------|--------------
+|1	|id 			|int(11)		|No		|None	| Primary, AUTO_INCREMENT	
+|2	|mac			|varchar(50)	|No		|None	|		
+|3	|mode			|varchar(50)	|No		|None	|		
+|4	|account		|varchar(50)	|Yes	|NULL	|		
+|5	|mpk_description|varchar(150)	|Yes	|NULL	|	
+|6	|mpk_value		|varchar(50)	|Yes	|NULL	|		
 
 
 
@@ -140,9 +140,9 @@ Our Database tables are given below.
 
 |#	Name				|Type			|Null	|Default| 	Extra
 |-----------------------|---------------|-------|-------|--------------
-|1	id (Primary)		|int(11)		|No		|None	|AUTO_INCREMENT	
+|1	id 					|int(11)		|No		|None	| Primary, AUTO_INCREMENT	
 |2	model_id			|int(11)		|No		|None	|		
-|3	model_mac (Index)	|varchar(50)	|No		|None	|	
+|3	model_mac 			|varchar(50)	|No		|None	|	Index
 
 
 
@@ -150,7 +150,7 @@ Our Database tables are given below.
 
 |#	|Name				|Type			|Null	|Default |	Extra
 |---|-------------------|---------------|-------|--------|--------------
-|1	|id (Primary)		|int(11)		|No		|None	 |AUTO_INCREMENT	
+|1	|id 				|int(11)		|No		|None	 | Primary, AUTO_INCREMENT	
 |2	|phone_name			|varchar(30)	|No		|None	 |		
 |3	|mp_keys			|varchar(1)		|No		|None	 |	
 
@@ -160,7 +160,7 @@ Our Database tables are given below.
 
 |#	|Name				|Type			|Null	|Default| 	Extra
 |---|-------------------|---------------|-------|-------|---------------
-|1	|id (Primary)		|int(11)		|No		|None	|AUTO_INCREMENT	
+|1	|id 				|int(11)		|No		|None	|Primary, AUTO_INCREMENT	
 |2	|sip_ip (Index)		|varchar(50)	|Yes	|NULL	|
 |3	|server_type		|varchar(1)		|Yes	|NULL	|	
 
@@ -170,7 +170,7 @@ Our Database tables are given below.
 
 |#	|Name				|Type			|Null	|Default| 	Extra
 |---|-------------------|---------------|-------|-------|----------
-|1	|mac (Primary)		|varchar(50)	|No		|None	|		
+|1	|mac 				|varchar(50)	|No		|None	|	Primary		
 |2	|weather_update		|varchar(50)	|Yes	|NULL	|		
 |3	|currency_exchange	|varchar(50)	|No		|None	|		
 |4	|frimware_upgrade	|varchar(200)	|Yes	|NULL	|	
