@@ -161,7 +161,7 @@ Our Database tables are given below.
 |#	|Name				|Type			|Null	|Default| 	Extra
 |---|-------------------|---------------|-------|-------|---------------
 |1	|id 				|int(11)		|No		|None	|Primary, AUTO_INCREMENT	
-|2	|sip_ip (Index)		|varchar(50)	|Yes	|NULL	|
+|2	|sip_ip 			|varchar(50)	|Yes	|NULL	| Index
 |3	|server_type		|varchar(1)		|Yes	|NULL	|	
 
 
