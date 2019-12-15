@@ -1,9 +1,9 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-        <img src="/images/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-             style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE</span>
+        <img src={{ asset('./images/sip-2.png')}} alt="G3T" class="brand-image img-circle elevation-0"
+             style="opacity: 1.0">
+        <span class="brand-text font-weight-light">G3T</span>
     </a>
 
     <!-- Sidebar -->
@@ -11,7 +11,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="/images/AdminLTELogo.png" class="img-circle elevation-2" alt="User Image">
+                <img src={{ asset("./images/sip.png")}} class="img-circle elevation-0" alt="User Image"  style="opacity: 1">
             </div>
             <div class="info">
                 <a class="d-block" href="#">{{ Auth::user()->name }}</a>
