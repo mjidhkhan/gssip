@@ -1,6 +1,6 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary elevation-1">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="#" class="brand-link">
         <img src={{ asset('./images/sip-2.png')}} alt="G3T" class="brand-image img-circle elevation-0"
              style="opacity: 1.0">
         <span class="brand-text font-weight-light">G3T</span>

@@ -18,4 +18,3 @@
     </ul>
 
 </nav>
-© 2019 GitHub, Inc.

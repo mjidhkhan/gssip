@@ -45784,3 +45784,29 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+.sip-brand-link {
+  padding: 0.125rem 0.5rem;
+  width: auto;
+}
+
+.content-Landing {
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: eee;
+  height: 88vh;
+}
+
+.header-dark {
+  background: #343a40;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.border-top {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+}
+
