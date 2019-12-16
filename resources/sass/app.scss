@@ -1,3 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
+
+
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -7,13 +14,19 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Font Awesome
-@import '~@fortawesome/fontawesome-free/scss/brands';
+//$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+//@import '~@fortawesome/fontawesome-free/scss/brands';
+//@import '~@fortawesome/fontawesome-free/scss/regular';
+//@import '~@fortawesome/fontawesome-free/scss/solid';
+//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
 
 // Variables
 @import 'variables';
@@ -23,6 +36,9 @@
 
 // AdminLTE
 @import '~admin-lte/dist/css/adminlte.css';
+
+
+
 
 .sip-brand-link {
 	padding: 0.125rem 0.5rem; 
@@ -44,3 +60,7 @@
 .border-top{
 	border: 2px solid rgba(0, 0, 0, 0.125);
 }
+
+
+
+@tailwind utilities;

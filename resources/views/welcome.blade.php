@@ -61,13 +61,9 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer"  style="margin-left: 0px;">
-    <strong>Copyright &copy; 2014-2019 <a href="#">G3T SIP</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 2.0.0
-    </div>
-  </footer>
+  <!-- /.footer -->
+    @include('layouts.app.footer')
+  
 
   <!-- Control Sidebar -->
   

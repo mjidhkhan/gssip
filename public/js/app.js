@@ -38311,8 +38311,8 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "tbody",
-                      _vm._l(_vm.users, function(user) {
-                        return _c("tr", [
+                      _vm._l(_vm.users, function(user, index) {
+                        return _c("tr", { key: index }, [
                           _c("td", [_vm._v(_vm._s(user.id))]),
                           _vm._v(" "),
                           _c("td", [_vm._v(_vm._s(user.name))]),
@@ -54211,8 +54211,8 @@ function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/majid/sandbox/Laravel/gssip/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/majid/sandbox/Laravel/gssip/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/mhk/sandbox/Laravel/gssip/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/mhk/sandbox/Laravel/gssip/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
