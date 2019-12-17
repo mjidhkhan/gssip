@@ -1,4 +1,4 @@
-<nav class="main-header navbar navbar-expand navbar-dark navbar-gray-dark border-bottom-0">
+<nav class="main-header navbar navbar-expand navbar-dark navbar-gray-dark fixed-top border-bottom-0">
 
     <ul class="navbar-nav">
         <li class="nav-item">
