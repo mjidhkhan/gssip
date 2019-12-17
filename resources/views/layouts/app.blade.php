@@ -17,10 +17,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
-<body class="hold-transition sidebar-mini dark">
+<body class="hold-transition sidebar-mini dark bg-teal-800">
 
     <!-- wrapper -->
-    <div class="wrapper" id="app">
+    <div class="wrapper bg-teal-800" id="app">
         @yield('content')
     </div>
     <!-- ./wrapper -->

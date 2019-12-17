@@ -7,12 +7,12 @@
     <div class="login-box">
         <div class="row0 justify-content-center ">
             <div class="col-12">
-                <div class="card border-top">
-                    <div class="card-header bg-dark"> 
-                        <span class="login-logo fas fa-lock  float-left text-blue pt-2"></span>
-                        <span class=" float-right">  {{__('G3T SIP Login')}}</span>
+                <div class="card">
+                    <div class="card-header  bg-gray-400"> 
+                        <span class="text-lg fas fa-lock  float-left text-orange-600 "></span>
+                        <span class="text-base pl-2 text-yellow-600">  {{__('G3T SIP Login')}}</span>
                     </div>
-                    <div class="card-body login-card-body">
+                    <div class="card-body login-card-body bg-gray-200">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 

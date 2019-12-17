@@ -3,7 +3,7 @@
 @tailwind components;
 
 
-
+ 
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
@@ -15,17 +15,14 @@
 @import '~bootstrap/scss/bootstrap';
 // Fonts
 //@import url('https://fonts.googleapis.com/css?family=Nunito');
-
+  
 // Font Awesome
-//$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-//@import '~@fortawesome/fontawesome-free/scss/brands';
-//@import '~@fortawesome/fontawesome-free/scss/regular';
-//@import '~@fortawesome/fontawesome-free/scss/solid';
-//@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+$fa-font-path: '/fonts/@fortawesome/fontawesome-free';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
 
 
 // Variables
@@ -38,17 +35,22 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~admin-lte/dist/css/adminlte.css';
 
 
+.img {
+    max-width: auto;
+    height: auto;
+}
 
-
+.user-panel .img {
+    height: auto;
+    width: auto;
+}
 .sip-brand-link {
 	padding: 0.125rem 0.5rem; 
 	width:auto
 }
 .content-Landing{
 	transition: margin-left 0.3s ease-in-out;
-    margin-left: 10px;
-	margin-right:10px;
-	background: eee;
+    background:#265774;
 	height:88vh;
 }
 .header-dark {
@@ -57,10 +59,41 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 .text-white{
 	color:#fff
 }
+
+
 .border-top{
 	border: 2px solid rgba(0, 0, 0, 0.125);
 }
+.card{
+	
+	box-shadow: 0 0 0px rgba(0, 0, 0, 0.125), 0 0px 0px rgba(0, 0, 0, 0.2);
+	border: 0px solid rgba(0, 0, 0, 0.125);
+}
+.card-shadow{
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.card-border{
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
 
+.card-header{
+	border-top: 3px solid rgba(0, 0, 0, 0.125);
+	border-top: 3px solid rgba(0, 0, 0, 0.125);
+}
+.custom-header{
+	border-top: 3px solid rgba(0, 0, 0, 0.125);
+	
+}
+.bg-custom{
+	background:#265774;
+}
+.custom-header{
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
 
 
 @tailwind utilities;
+

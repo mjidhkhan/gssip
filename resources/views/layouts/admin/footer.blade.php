@@ -5,6 +5,6 @@
         Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; {{ now()->year }} AdminLTE.io</strong>. All rights reserved.
+  .io  <strong>Copyright &copy; {{ now()->year }} <a href="/">G3T SIP</a></strong>. All rights reserved.
 
 </footer>
