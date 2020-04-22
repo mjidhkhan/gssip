@@ -11,7 +11,7 @@
         <!-- Control Sidebar -->
         <li class="nav-item">
             <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
-                <i  class="fas fa-th-large text-red"></i>
+                <i  class="fas fa-th-large text-white"></i>
             </a>
         </li>
 

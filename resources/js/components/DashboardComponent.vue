@@ -35,7 +35,7 @@
                             <div class="col-md-6">
                                 <div class="card text-white" style="transition: all 0.15s ease 0s; height: inherit; width: inherit;">
                                     <div class="card-header special-header  bg-gray-800 special-header-top border-purple-400">
-                                        <h3 class="card-title text-3xl">GXP-2130</h3>
+                                        <h3 class="card-title ">GXP-2130</h3>
 
                                         <div class="card-tools ">
                                             <button type="button" class="btn btn-tool text-white" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
@@ -55,7 +55,7 @@
                             <div class="col-md-6">
                                 <div class="card text-white" style="transition: all 0.15s ease 0s; height: inherit; width: inherit;">
                                     <div class="card-header card-header bg-gray-800 border-purple-400">
-                                        <h3 class="card-title text-3xl">GXP-2160</h3>
+                                        <h3 class="card-title ">GXP-2160</h3>
 
                                         <div class="card-tools ">
                                             <button type="button" class="btn btn-tool text-white" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
@@ -79,7 +79,7 @@
                                 <div class="col-md-6">
                                     <div class="card text-white" style="transition: all 0.15s ease 0s; height: inherit; width: inherit;">
                                         <div class="card-header custom-header bg-gray-800 border-purple-400">
-                                            <h3 class="card-title text-3xl">GXP-1628</h3>
+                                            <h3 class="card-title ">GXP-1628</h3>
 
                                             <div class="card-tools ">
                                                 <button type="button" class="btn btn-tool text-white" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
@@ -101,7 +101,7 @@
                                 <div class="col-md-6">
                                     <div class="card text-white" style="transition: all 0.15s ease 0s; height: inherit; width: inherit;">
                                         <div class="card-header custom-header bg-gray-800 border-purple-400">
-                                            <h3 class="card-title text-3xl">GXP 2130</h3>
+                                            <h3 class="card-title ">GXP 2130</h3>
 
                                             <div class="card-tools ">
                                                 <button type="button" class="btn btn-tool text-white" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
@@ -134,7 +134,7 @@
                                 <div class="col-md-6">
                                     <div class="card text-white" style="transition: all 0.15s ease 0s; height: inherit; width: inherit;">
                                         <div class="card-header custom-header  bg-gray-800  border-orange-600">
-                                            <h3 class="card-title text-3xl">GRP-2614</h3>
+                                            <h3 class="card-title ">GRP-2614</h3>
                                             <div class="card-tools ">
                                                 <button type="button" class="btn btn-tool text-white" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
                                                 <button type="button" class="btn btn-tool text-white" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
@@ -155,7 +155,7 @@
                                 <div class="col-md-6">
                                     <div class="card text-white" style="transition: all 0.15s ease 0s; height: inherit; width: inherit;">
                                         <div class="card-header card-header bg-gray-800 border-orange-600">
-                                            <h3 class="card-title text-3xl">GRP-2616</h3>
+                                            <h3 class="card-title ">GRP-2616</h3>
                                             <div class="card-tools ">
                                                 <button type="button" class="btn btn-tool text-white" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
                                                 <button type="button" class="btn btn-tool text-white" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
